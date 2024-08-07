@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Mariam\\Asp.Net Projects\\Ecommerce Store\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6E3F0B05-4718-4B31-81EA-B6228FB5C991}|Ecommerce Store\\Ecommerce Store.csproj|d:\\mariam\\asp.net projects\\ecommerce store\\ecommerce store\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E3F0B05-4718-4B31-81EA-B6228FB5C991}|Ecommerce Store\\Ecommerce Store.csproj|solutionrelative:ecommerce store\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E3F0B05-4718-4B31-81EA-B6228FB5C991}|Ecommerce Store\\Ecommerce Store.csproj|d:\\mariam\\asp.net projects\\ecommerce store\\ecommerce store\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E3F0B05-4718-4B31-81EA-B6228FB5C991}|Ecommerce Store\\Ecommerce Store.csproj|solutionrelative:ecommerce store\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E3F0B05-4718-4B31-81EA-B6228FB5C991}|Ecommerce Store\\Ecommerce Store.csproj|d:\\mariam\\asp.net projects\\ecommerce store\\ecommerce store\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E3F0B05-4718-4B31-81EA-B6228FB5C991}|Ecommerce Store\\Ecommerce Store.csproj|solutionrelative:ecommerce store\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E3F0B05-4718-4B31-81EA-B6228FB5C991}|Ecommerce Store\\Ecommerce Store.csproj|d:\\mariam\\asp.net projects\\ecommerce store\\ecommerce store\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E3F0B05-4718-4B31-81EA-B6228FB5C991}|Ecommerce Store\\Ecommerce Store.csproj|solutionrelative:ecommerce store\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Mariam\\Asp.Net Projects\\Ecommerce Store\\Ecommerce Store\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce Store\\Views\\Products\\Delete.cshtml",
+              "ToolTip": "D:\\Mariam\\Asp.Net Projects\\Ecommerce Store\\Ecommerce Store\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "Ecommerce Store\\Views\\Products\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T14:16:07.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Mariam\\Asp.Net Projects\\Ecommerce Store\\Ecommerce Store\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce Store\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Mariam\\Asp.Net Projects\\Ecommerce Store\\Ecommerce Store\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Ecommerce Store\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T14:05:57.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Mariam\\Asp.Net Projects\\Ecommerce Store\\Ecommerce Store\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce Store\\Views\\Products\\Edit.cshtml",
+              "ToolTip": "D:\\Mariam\\Asp.Net Projects\\Ecommerce Store\\Ecommerce Store\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "Ecommerce Store\\Views\\Products\\Edit.cshtml",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAAAJUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T13:55:16.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Mariam\\Asp.Net Projects\\Ecommerce Store\\Ecommerce Store\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce Store\\Views\\Products\\Create.cshtml",
+              "ToolTip": "D:\\Mariam\\Asp.Net Projects\\Ecommerce Store\\Ecommerce Store\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "Ecommerce Store\\Views\\Products\\Create.cshtml",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAAJ0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T13:52:42.322Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

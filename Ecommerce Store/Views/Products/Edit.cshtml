@@ -1,0 +1,159 @@
+﻿@model Product
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #004085;
+            }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+            .btn-secondary:hover {
+                background-color: #5a6268;
+                border-color: #545b62;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container col-md-6">
+        <h1 class="alert alert-success text-center">Edit Product</h1>
+
+        <form method="post" asp-controller="Products" asp-action="EditCurrent" enctype="multipart/form-data">
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="ImagePath" />
+
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="form-label"></label>
+                <input type="text" asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Code" class="form-label"></label>
+                <input type="text" asp-for="Code" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ConfirmCode" class="form-label"></label>
+                <input type="text" asp-for="ConfirmCode" class="form-control" />
+                <span asp-validation-for="ConfirmCode" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Color" class="form-label"></label>
+                <input type="text" asp-for="Color" class="form-control" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Location" class="form-label"></label>
+                <input type="text" asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price" class="form-label"></label>
+                <input type="text" asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProductionDate" class="form-label"></label>
+                <input asp-for="ProductionDate" class="form-control" />
+                <span asp-validation-for="ProductionDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Notes" class="form-label"></label>
+                <input type="text" asp-for="Notes" class="form-control" />
+                <span asp-validation-for="Notes" class="text-danger"></span>
+            </div>
+
+            <div class="form-group form-check">
+                <input asp-for="ISAvaliable" type="checkbox" class="form-check-input" />
+                <label asp-for="ISAvaliable" class="form-check-label"></label>
+                <span asp-validation-for="ISAvaliable" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="ImageFile" class="form-label"></label>
+                <input type="file" name="imageFile" id="imageFile"
+                       accept=".png,.jpg" class="form-control"
+                       onchange="AddImage()" />
+            </div>
+
+
+            <div class="col-4">
+                <img src="" id="empImage" style="width:100% ; aspect-ratio:1/1" class="card" />
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary col-12">Edit</button>
+                <a asp-controller="Products" asp-action="GetIndexView" class="btn btn-secondary col-12 mt-2">Back To List</a>
+            </div>
+
+
+        </form>
+       
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+@section Scripts
+{
+    <script>
+        function AddImage()
+        {
+            document.getElementById("empImage").src = window.URL.createObjectURL
+                (document.getElementById("imageFile").files[0]);
+        }
+    </script>
+}

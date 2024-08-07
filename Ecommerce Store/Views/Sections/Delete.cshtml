@@ -1,0 +1,109 @@
+﻿@model Ecommerce_Store.Models.Section
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #495057;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            color: #343a40;
+        }
+
+        h3 {
+            margin-bottom: 1rem;
+            color: #dc3545;
+        }
+
+        h4 {
+            margin-bottom: 1rem;
+            color: #6c757d;
+        }
+
+        .details-box {
+            background-color: #ffffff;
+            border-radius: 0.25rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+            .details-box hr {
+                border-color: #e9ecef;
+            }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .btn-danger {
+            border-radius: 0.25rem;
+        }
+
+            .btn-danger:hover {
+                background-color: #c82333;
+                border-color: #bd2130;
+            }
+
+        .back-link {
+            margin-left: 1rem;
+            display: inline-block;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            .back-link:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+
+        <h3>Are you sure you want to delete this?</h3>
+
+        <div class="details-box">
+            <h4>Section</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+            </dl>
+        </div>
+
+        <form asp-action="Delete" class="form-inline">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Delete" class="btn btn-danger mr-2" />
+            <a asp-action="Index" class="back-link">Back to List</a>
+        </form>
+    </div>
+</body>
+</html>

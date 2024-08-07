@@ -1,0 +1,101 @@
+﻿@model IEnumerable<Ecommerce_Store.Models.Section>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #495057;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 1.5rem;
+            color: #343a40;
+        }
+
+        .table {
+            background-color: #ffffff;
+            border-radius: 0.25rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+
+            .table th, .table td {
+                vertical-align: middle;
+            }
+
+            .table th {
+                background-color: #343a40;
+                color: #ffffff;
+            }
+
+            .table td a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+                .table td a:hover {
+                    text-decoration: underline;
+                }
+
+        .btn-create {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            text-decoration: none;
+        }
+
+            .btn-create:hover {
+                background-color: #0056b3;
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Index</h1>
+
+        <p>
+            <a href="@Url.Action("Create")" class="btn-create">Create New</a>
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Description)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { id = item.Id })">Edit</a> |
+                            <a href="@Url.Action("Details", new { id = item.Id })">Details</a> |
+                            <a href="@Url.Action("Delete", new { id = item.Id })">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
